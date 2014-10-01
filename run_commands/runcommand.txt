@@ -1,0 +1,5 @@
+hdfs dfs -mkdir /user/hadoop/test
+hdfs dfs -rmr /user/hadoop/test/*
+hdfs dfs -copyFromLocal CSI5387_Project/datasets/covtype.data.tmp /user/hadoop/test/
+hdfs dfs -copyToLocal /user/hadoop/test-output/ /home/hduser/CSI5387_Project/output/
+
